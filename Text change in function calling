@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1 id="kala">Welcome to the program world mame!</h1>
+//Event handler using here
+    <button onclick="pink()">Change</button>
+    <script>
+        var para=document.getElementById("kala")
+
+       //when the pink function calling the text will change what we put
+        function pink()
+        {
+ para.textContent="Keep practice and do well"
+        }
+    </script>
+</body>
+</html>
