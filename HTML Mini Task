@@ -372,7 +372,9 @@
 
 </body>
 </html>
-    
+
+
+
 
 <!-- 9.HTML input tags snippet to show default values for all Form elements. -->
 
@@ -504,7 +506,16 @@
   </p>
 
 </body>
-</html<!DOCTYPE html>
+</html
+
+
+
+
+
+<!-- 11.Create an HTML page, which should contain all types of input elements. -->
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -606,7 +617,6 @@
 
 
 
-<!-- 11.Create an HTML page, which should contain all types of input elements. -->
 
 
  
