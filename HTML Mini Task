@@ -1,0 +1,282 @@
+<!-- 1.Fix the bugs in below snippet -->
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <title>Document</title>
+  </head>
+  <body>
+  guvi
+  <div> Lorem ipsum dolor sit amet consectetur adipiscing elit.
+  <div>
+  <div>Guvi Geek Network</div>
+  </div>
+  </div>
+  </body>
+  </html>
+  
+  
+  <!-- In this HTML has several structural issues -->
+  
+  <!-- <body> is placed inside <title> -->
+  <!-- <div> tags are outside the <body> -->
+  <!-- Several tags are not properly closed -->
+  <!-- The nesting order is invalid -->
+
+
+  
+  <!-- 2.Try the below one -->
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Document</title>
+  </head>  
+<body>
+    guvi
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>Guvi Geek Network</div>
+        </div>
+    </div>
+</body>
+  </html>
+
+
+  <!-- In this HTML still has the same types of issues -->
+
+  <!-- <body> tag is inside <title> -->
+    <!-- <div> elements are outside <body> -->
+        <!-- Missinhg closing tags -->
+         <!-- Incorrect nesting order -->
+
+
+  
+ <!-- 3.Design a contact us form with all fields as required. -->        
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-form {
+      background: #fff;
+      padding: 25px 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .contact-form button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="contact-form" action="#" method="post">
+    <h2>Contact Us</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+    </html>
+
+
+    <!-- 4.Display the following HTML elements in HTML page -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Languages and Frameworks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6f7;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #0056b3;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 25px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Programming Languages and Frameworks</h1>
+
+  <div class="section">
+    <h2>Programming Languages</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>JavaScript Frameworks</h2>
+    <ul>
+      <li>Angular</li>
+      <li>React</li>
+      <li>Vue.js</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Python Frameworks</h2>
+    <ul>
+      <li>Django Framework</li>
+      <li>Flask Framework</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Java Frameworks & Tools</h2>
+    <ul>
+      <li>Spring</li>
+      <li>Maven</li>
+      <li>Hibernate</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Databases</h2>
+    <ul>
+      <li>MySQL</li>
+      <li>MongoDB</li>
+      <li>Cassandra</li>
+    </ul>
+  </div>
+
+</body>
+</html>
+</html>
+
+    
+
+    <!-- 5.Create an element that helps to open the https://google.com in separate new tab. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Google in New Tab</title>
+</head>
+<body>
+  <h2>Open Google</h2>
+  <p>
+    Click the link below to open Google in a new tab:
+  </p>
+
+  <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+    Go to Google
+  </a>
+</body>
+</html>
+
+
+<!-- 6.In the form, Add two radio buttons -->
+
+    
+    
+</html>
