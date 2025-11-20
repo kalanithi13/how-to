@@ -277,6 +277,336 @@
 
 <!-- 6.In the form, Add two radio buttons -->
 
-    
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Type Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background: #fff;
+      padding: 25px 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post">
+    <h2>Employee Information</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label>Employee Type:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="employee_type" value="salaried" required>
+        Salaried
+      </label>
+      <label>
+        <input type="radio" name="employee_type" value="own_business" required>
+        Own Business
+      </label>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
 </html>
+    
+
+<!-- 9.HTML input tags snippet to show default values for all Form elements. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements with Default Values</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 25px 35px;
+      border-radius: 10px;
+      width: 400px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Form with Default Values</h2>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" value="John Doe">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="john@example.com">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" value="default123">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" value="25">
+
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="male" checked> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <label>Hobbies:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="hobby" value="reading" checked> Reading</label>
+      <label><input type="checkbox" name="hobby" value="traveling"> Traveling</label>
+      <label><input type="checkbox" name="hobby" value="music" checked> Music</label>
+    </div>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option>India</option>
+      <option selected>USA</option>
+      <option>UK</option>
+      <option>Canada</option>
+    </select>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="3">This is a default comment.</textarea>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" value="1995-06-15">
+
+    <label for="time">Preferred Time:</label>
+    <input type="time" id="time" name="time" value="09:30">
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color" value="#007bff">
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
+
+
+
+<!-- 10.In HTML page add the below line and Highlight it without using any CSS.
+"HTML & CSS is awesome" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlight Example</title>
+</head>
+<body>
+
+  <h2>Highlighted Text Example</h2>
+
+  <p>
+    <mark>HTML &amp; CSS is awesome</mark>
+  </p>
+
+</body>
+</html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All HTML Input Elements Example</title>
+</head>
+<body>
+  <h1>All Types of HTML Input Elements</h1>
+
+  <form action="#" method="post">
+    <!-- Text Inputs -->
+    <label>Text:</label>
+    <input type="text" name="text" value="John Doe"><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" value="mypassword"><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" value="example@email.com"><br><br>
+
+    <label>Number:</label>
+    <input type="number" name="number" value="42"><br><br>
+
+    <label>Tel:</label>
+    <input type="tel" name="tel" value="+91-9876543210"><br><br>
+
+    <label>URL:</label>
+    <input type="url" name="url" value="https://example.com"><br><br>
+
+    <label>Search:</label>
+    <input type="search" name="search" value="HTML inputs"><br><br>
+
+    <!-- Choice Inputs -->
+    <label>Radio Buttons:</label><br>
+    <input type="radio" name="gender" value="male" checked> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <label>Checkboxes:</label><br>
+    <input type="checkbox" name="skill" value="html" checked> HTML
+    <input type="checkbox" name="skill" value="css"> CSS
+    <input type="checkbox" name="skill" value="js"> JavaScript<br><br>
+
+    <label>Select Dropdown:</label><br>
+    <select name="country">
+      <option>India</option>
+      <option selected>USA</option>
+      <option>UK</option>
+      <option>Canada</option>
+    </select><br><br>
+
+    <!-- Date & Time Inputs -->
+    <label>Date:</label>
+    <input type="date" name="date" value="2025-11-09"><br><br>
+
+    <label>Datetime-local:</label>
+    <input type="datetime-local" name="datetime"><br><br>
+
+    <label>Month:</label>
+    <input type="month" name="month" value="2025-11"><br><br>
+
+    <label>Week:</label>
+    <input type="week" name="week" value="2025-W45"><br><br>
+
+    <label>Time:</label>
+    <input type="time" name="time" value="10:30"><br><br>
+
+    <!-- Other Inputs -->
+    <label>Color:</label>
+    <input type="color" name="color" value="#007bff"><br><br>
+
+    <label>Range:</label>
+    <input type="range" name="range" min="0" max="100" value="60"><br><br>
+
+    <label>File Upload:</label>
+    <input type="file" name="file"><br><br>
+
+    <label>Hidden Field:</label>
+    <input type="hidden" name="hidden" value="secretData"><br><br>
+
+    <label>Image Button:</label><br>
+    <input type="image" src="https://via.placeholder.com/100x40?text=Submit" alt="Submit"><br><br>
+
+    <label>Reset Button:</label>
+    <input type="reset" value="Reset Form"><br><br>
+
+    <label>Submit Button:</label>
+    <input type="submit" value="Submit Form"><br><br>
+
+    <label>Button Element:</label>
+    <input type="button" value="Click Me" onclick="alert('Button clicked!')"><br><br>
+
+    <label>Textarea:</label><br>
+    <textarea name="comments" rows="4" cols="40">This is a sample text area.</textarea><br><br>
+  </form>
+
+</body>
+</html>
+
+
+
+
+<!-- 11.Create an HTML page, which should contain all types of input elements. -->
+
+
+ 
